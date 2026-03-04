@@ -1,0 +1,159 @@
+#**************************************************************************************************#
+#*                                                                                                *#
+#*                                    Project outputs ignore                                      *#
+#*                                                                                                *#
+#**************************************************************************************************#
+Debug/
+Release/
+Release_*/
+Debug_*/
+*Src/
+*Inc/
+
+#######################################################################
+# Include only the Src/ and Inc/ folders under any HAL-* and Core dir #
+#######################################################################
+!**/*HAL*/Src
+!**/*HAL*/Inc
+!**/Core/Src
+!**/Core/Inc
+
+*.settings/
+
+#**************************************************************************************************#
+#*                                                                                                *#
+#*                                          C++ ignore                                            *#
+#*                                                                                                *#
+#**************************************************************************************************#
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+##############################################################
+# commented out because we use CMSIS DSP static library      #
+##############################################################
+# Compiled Static libraries
+#*.lai
+#*.la
+#*.a
+#*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#**************************************************************************************************#
+#*                                                                                                *#
+#*                                       CubeIDE ignores                                          *#
+#*                                                                                                *#
+#**************************************************************************************************#
+##############################################################
+# commented out to allow the repository to work with cubeIDE #
+##############################################################
+# Project files
+# *.cproject
+# *.project
+# *MCU_cores/
+# *startup/
+# *.launch
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+##############################################################
+# commented out to allow the repository to work with cubeIDE #
+##############################################################
+# *.ld
+
+# Precompiled Headers
+*.gch
+*.pch
+
+##############################################################
+# commented out because we use CMSIS DSP static library      #
+##############################################################
+# Libraries
+#*.lib
+#*.a
+#*.la
+#*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+#**************************************************************************************************#
+#*                                                                                                *#
+#*                                 Libraries development ignores                                  *#
+#*                                                                                                *#
+#**************************************************************************************************#
+##############################################################
+# These gitignore exceptions are commented out because       #
+#      all related gitignores is commented out.              #
+##############################################################
+# !/itf_libraries/*.cproject
+# !/itf_libraries/*.project
+# !/itf_libraries/MCU_cores/
+# !/itf_libraries/*.launch
+# !/itf_libraries/*startup/
+# !/itf_libraries/*.ld
+# G4_pif_examples/Periferal_interfaces_development
+
+#**************************************************************************************************#
+#*                                                                                                *#
+#*                                   VSCode specific ignores                                      *#
+#*                                                                                                *#
+#**************************************************************************************************#
+*.vscode/

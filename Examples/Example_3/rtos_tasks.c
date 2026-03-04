@@ -62,7 +62,7 @@ static void prvOutputTask(DEBUG_UNUSED void* pvParameters)
 
         TickType_t xTickNow = xTaskGetTickCount();
 
-        vReadMutualData(&xReadData);
+        prvReadMutualData(&xReadData);
 
         printf("[%u]", xTickNow );
 
@@ -156,12 +156,6 @@ static void prvSerialTerminalTask(DEBUG_UNUSED void* pvParameters)
         uart1_reset_rx_dma();
 
     }
-}
-
-
-static void prvDecreseDacTask(DEBUG_UNUSED void* pvParameters)
-{
-    while()
 }
 
 
